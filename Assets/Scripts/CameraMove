@@ -1,19 +1,26 @@
 using UnityEngine;
+using Cinemachine;
 
-public class CamraMove : MonoBehaviour
+public class CameraMove : MonoBehaviour
 {
-    public GameObject Camera, Player;
-    Vector3 Distance;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    private CinemachineVirtualCamera vcam;
+
     void Start()
     {
-        Distance = Camera.transform.position - Player.transform.position;
+        vcam= GetComponent<CinemachineVirtualCamera>();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        Camera.transform.position = Player.transform.position + Distance;
-        
+        if (vcam.Follow == null)
+        {
+            GameObject player = GameObject.FindWithTag("Player");
+            if (player != null)
+            {
+                vcam.Follow = spawnedPlayer.transform;
+                vcam.LookAt = spawnedPlayer.transform;
+
+            }
+        }
     }
 }
