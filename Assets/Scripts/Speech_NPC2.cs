@@ -4,7 +4,7 @@ using UnityEditor;
 using TMPro;
 using UnityEngine.UIElements;
 
-public class SpeechBubbleControl : MonoBehaviour
+public class Speech_NPC2 : MonoBehaviour
 {
     string[] dialogues;
     public int dialogueIndex;
@@ -17,10 +17,9 @@ public class SpeechBubbleControl : MonoBehaviour
         dialogueIndex = -1;
         dialogueText.text = " ";
         dialogues = new string[] {
-            "Hi! Welcome to the forest! Me and my friends have something we want you to do for us.",
-            "You should talk to all my friends back there, they'll explain.",
-            "Once you're done, go through the door behind you!",
-            "Click me one more time to make me shut up! (And click me again after to restart my whole spiel!)"
+            "Do you like shiny crystals? I like shiny crystals.",
+            "You should collect all the crystals in the next room!",
+            "There are 5 of them, make sure to collect them all!",
         };
     }
 
@@ -50,4 +49,5 @@ public class SpeechBubbleControl : MonoBehaviour
         
  
     }
+    
 }
