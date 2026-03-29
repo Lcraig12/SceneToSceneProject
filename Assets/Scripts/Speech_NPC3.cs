@@ -30,23 +30,23 @@ public class Speech_NPC3 : MonoBehaviour
         
     }
 
-    void OnMouseDown()
+    void OnMouseOver()
     {
-        if(gameObject.tag == "ForestNPC")
+        if (Input.GetKeyDown(KeyCode.E))
         {
-            dialogueIndex++;
-            if(dialogueIndex >= dialogues.Length)
+            if(gameObject.tag == "ForestNPC")
             {
-                dialogueIndex = -1;
-                dialogueText.text = " ";
+                dialogueIndex++;
+                if(dialogueIndex >= dialogues.Length)
+                {
+                    dialogueIndex = -1;
+                    dialogueText.text = " ";
+                }
+                else
+                {
+                    dialogueText.text = dialogues[dialogueIndex];
+                }  
             }
-            else
-            {
-                dialogueText.text = dialogues[dialogueIndex];
-            
-            }  
-        }
-        
- 
+        }  
     }
 }

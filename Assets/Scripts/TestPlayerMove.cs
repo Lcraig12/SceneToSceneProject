@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class PlayerMove : MonoBehaviour
+public class TestPlayerMove : MonoBehaviour
 {
     [Header("Movement Settings")]
     public float moveSpeed = 5f;     // Normal walking speed
@@ -27,7 +27,7 @@ public class PlayerMove : MonoBehaviour
     void Start()
     {
         // Get component references
-        controller = GetComponent();
+        controller = GetComponent<CharacterController>();
         playerTransform = transform;
         currentSpeed = moveSpeed;  // Start with normal speed
     }
@@ -103,7 +103,7 @@ public class PlayerMove : MonoBehaviour
         // Apply vertical movement (jumping/falling)
         controller.Move(Vector3.up * verticalVelocity * Time.deltaTime);
     }
-    
+    /*
     void OnDrawGizmosSelected()
     {
         // Draw ground check sphere in Scene view for debugging
@@ -111,4 +111,5 @@ public class PlayerMove : MonoBehaviour
         Vector3 groundCheckPos = transform.position + Vector3.down * controller.height/2;
         Gizmos.DrawWireSphere(groundCheckPos, groundCheckDistance);
     }
+    */
 }

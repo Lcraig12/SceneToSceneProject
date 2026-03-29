@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class CameraMove : MonoBehaviour
+public class TestCamera : MonoBehaviour
 {
     public Transform target;               // Player character to follow
     public float distance = 5f;            // Distance from camera to player

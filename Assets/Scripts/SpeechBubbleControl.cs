@@ -20,7 +20,7 @@ public class SpeechBubbleControl : MonoBehaviour
             "Hi! Welcome to the forest! Me and my friends have something we want you to do for us.",
             "You should talk to all my friends back there, they'll explain.",
             "Once you're done, go through the door behind you!",
-            "Click me one more time to make me shut up! (And click me again after to restart my whole spiel!)"
+            "Press E on me one more time to make me shut up! (And press E on me again after to restart my whole spiel!)"
         };
     }
 
@@ -31,23 +31,23 @@ public class SpeechBubbleControl : MonoBehaviour
         
     }
 
-    void OnMouseDown()
+    void OnMouseOver()
     {
-        if(gameObject.tag == "ForestNPC")
+        if (Input.GetKeyDown(KeyCode.E))
         {
-            dialogueIndex++;
-            if(dialogueIndex >= dialogues.Length)
+            if(gameObject.tag == "ForestNPC")
             {
-                dialogueIndex = -1;
-                dialogueText.text = " ";
+                dialogueIndex++;
+                if(dialogueIndex >= dialogues.Length)
+                {
+                    dialogueIndex = -1;
+                    dialogueText.text = " ";
+                }
+                else
+                {
+                    dialogueText.text = dialogues[dialogueIndex];
+                }  
             }
-            else
-            {
-                dialogueText.text = dialogues[dialogueIndex];
-            
-            }  
-        }
-        
- 
+        }  
     }
 }
