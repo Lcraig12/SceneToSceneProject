@@ -35,12 +35,15 @@ public class TestPlayerMove : MonoBehaviour
     void Update()
     {
         // Ground check using a sphere cast at player's feet
+        /*
         isGrounded = Physics.CheckSphere(
             transform.position + Vector3.down * controller.height/2, 
-            groundCheckDistance, 
-            groundMask
+            groundCheckDistance 
+            //groundMask
         );
+        */
         
+        isGrounded = controller.isGrounded;
         // Reset vertical velocity when grounded to prevent accumulation
         if (isGrounded && verticalVelocity < 0)
         {

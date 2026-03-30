@@ -1,10 +1,12 @@
 using UnityEngine;
 using Unity.Cinemachine;
+using UnityEngine.SceneManagement;
 
 public class PlayController : MonoBehaviour
 {
     //public GameObject spawnedPlayer;
     public GameObject player;
+    public GameObject door;
     public CinemachineCamera vcam;
     //public float fspeed = 500;
 
@@ -32,8 +34,44 @@ public class PlayController : MonoBehaviour
         vcam.Follow = player.transform;
         vcam.LookAt = player.transform;
     }
+    void OnTriggerEnter(Collision collision)
+    {
+        if(collision.gameObject.CompareTag("Door"))
+        {
+            SceneManager.LoadScene("Dungeon");
+        }
+    }
 
-    // Update is called once per frame
+    /*
+
+    void FixedUpdate()
+    {
+
+
+        if (Input.GetKey(KeyCode.D))
+        {
+            transform.Translate(speed * Time.deltaTime, 0, 0);
+        }
+
+        if (Input.GetKey(KeyCode.A))
+        {
+            transform.Translate(-speed * Time.deltaTime, 0, 0);
+        }
+
+        if (Input.GetKey(KeyCode.W))
+        {
+            transform.Translate(0, 0, speed * Time.deltaTime);
+
+        }
+
+        if (Input.GetKey(KeyCode.S))
+        {
+            transform.Translate(0, 0, -speed * Time.deltaTime);
+
+        }
+
+    }
+    */
     
     
 }
