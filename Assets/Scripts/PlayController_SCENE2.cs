@@ -2,6 +2,9 @@ using UnityEngine;
 using Unity.Cinemachine;
 using UnityEngine.InputSystem;
 using TMPro;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 
 public class PlayController_SCENE2 : MonoBehaviour
 {
@@ -40,6 +43,10 @@ public class PlayController_SCENE2 : MonoBehaviour
         {
             cooldown -= Time.deltaTime;
         }
+        if(gemCollectCount >= 5)
+        {
+            SceneManager.LoadScene("BrightDay");
+        }
     }
 
     void OnTriggerEnter(Collider other)
@@ -50,6 +57,7 @@ public class PlayController_SCENE2 : MonoBehaviour
             gemCollectCount++;
             gemCountText.text = "Gems Collected: " + gemCollectCount.ToString() +"/5";
             //SetCountText();
+
         }
         
     }

@@ -19,7 +19,7 @@ public class SpeechBubbleControl : MonoBehaviour
         dialogues = new string[] {
             "Hi! Welcome to the forest! Me and my friends have something we want you to do for us.",
             "You should talk to all my friends back there, they'll explain.",
-            "Once you're done, go through the door behind you!",
+            "Once you're done, interact with the door behind you! (Hover mouse + Press E)",
             "Press E on me one more time to make me shut up! (And press E on me again after to restart my whole spiel!)"
         };
     }

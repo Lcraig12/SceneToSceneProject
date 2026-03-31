@@ -20,7 +20,7 @@ public class Speech_NPC4 : MonoBehaviour
             "Who are you",
             "I think I'm lost I don't know where I am",
             "Who are you people??",
-            "Help!"
+            "Help!!!"
         };
     }
 

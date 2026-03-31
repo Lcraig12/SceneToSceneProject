@@ -18,7 +18,8 @@ public class Speech_NPC3 : MonoBehaviour
         dialogueText.text = " ";
         dialogues = new string[] {
             "They're gonna Get you",
-            "Don't touch the bad guys you're gonna take damage it's gonna suck bro",
+            "After you get all the gems, you gotta escape... they're gonna be after you",
+            "You better run back to your house once you're out of the dungeon. Or else bad things will happen.",
             "I warned you"
         };
     }

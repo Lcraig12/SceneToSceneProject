@@ -17,9 +17,10 @@ public class Speech_NPC2 : MonoBehaviour
         dialogueIndex = -1;
         dialogueText.text = " ";
         dialogues = new string[] {
-            "Do you like shiny crystals? I like shiny crystals.",
-            "You should collect all the crystals in the next room!",
+            "Through the door is a dungeon",
+            "It's kinda scary... but there are a lot of cool crystals in there.",
             "There are 5 of them, make sure to collect them all!",
+            "...but Watch Out; there's a bunch of scary guys patrolling... don't let them hurt you!"
         };
     }
 

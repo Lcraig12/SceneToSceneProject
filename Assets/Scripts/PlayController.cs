@@ -1,6 +1,11 @@
 using UnityEngine;
 using Unity.Cinemachine;
 using UnityEngine.SceneManagement;
+using Unity.Cinemachine;
+using UnityEngine.InputSystem;
+using TMPro;
+using System.Collections;
+using System.Collections.Generic;
 
 public class PlayController : MonoBehaviour
 {
@@ -34,7 +39,7 @@ public class PlayController : MonoBehaviour
         vcam.Follow = player.transform;
         vcam.LookAt = player.transform;
     }
-    void OnTriggerEnter(Collision collision)
+    void OnCollisionEnter(Collision collision)
     {
         if(collision.gameObject.CompareTag("Door"))
         {
