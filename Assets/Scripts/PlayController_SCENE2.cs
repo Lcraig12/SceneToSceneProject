@@ -45,7 +45,7 @@ public class PlayController_SCENE2 : MonoBehaviour
         }
         if(gemCollectCount >= 5)
         {
-            SceneManager.LoadScene("BrightDay");
+            SceneManager.LoadScene("3rdScene");
         }
     }
 
@@ -73,7 +73,7 @@ public class PlayController_SCENE2 : MonoBehaviour
                 if(lives==0)
                 {
                     //Destroy(gameObject);
-                    gameObject.transform.position = new Vector3(-44, 1, 39);
+                    player.transform.position = new Vector3(-44, 1, 39);
                     gemCollectCount = 0;
                     gem1.SetActive(true);
                     gem2.SetActive(true);
