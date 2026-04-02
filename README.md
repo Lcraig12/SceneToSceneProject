@@ -1,12 +1,14 @@
 A short game about a wizard trying to get some gems. 3 Scenes with NPC's, collectible crystals, and enemies with patrolling and tracking AI.
 
+To interact with objects in the game, hover with the mouse and press e! (Talk with NPC's, swap scenes)
+
 Contributions:
 
 Norrie:
--Player movement & asset
--NPCs & interaction with them, as well as the navmesh patrol in scene 2
--Collectables & scripting in scene 2
--Door in scene 1
+- Player movement & asset
+- NPCs & interaction with them, as well as the navmesh patrol in scene 2
+- Collectables & scripting in scene 2
+- Door in scene 1
 
 Logan:
 - Cinemachine VCam
