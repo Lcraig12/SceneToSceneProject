@@ -17,6 +17,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/BrightDay.unity
     guid: c9e30e1e40e5f6a47aa6053500404e37
+  - enabled: 1
+    path: Assets/Scenes/3rdScene.unity
+    guid: 45920d8b84ce74dcf9ee5ff045fc8c49
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0
