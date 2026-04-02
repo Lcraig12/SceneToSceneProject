@@ -46,6 +46,7 @@ public class PlayController_SCENE3 : MonoBehaviour
         if(other.gameObject.CompareTag("Home"))
         {
             //Need to hide winText 
+            Time.timeScale = 0f;
             winText.text = "You win!";
             //SetCountText();
 
@@ -64,9 +65,11 @@ public class PlayController_SCENE3 : MonoBehaviour
                 if(lives==0)
                 {
                     //Destroy(gameObject);
-                    player.transform.position = new Vector3(342, 34, 351);
+                    
+                    //player.transform.position = new Vector3(342, 34, 351);
                     lives = 3;
                     livesText.text = "Lives: " + lives.ToString();
+                    SceneManager.LoadScene("3rdScene");
                     
                 }
                 else
