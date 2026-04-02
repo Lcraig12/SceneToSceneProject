@@ -20,6 +20,7 @@ Logan:
 - Scene3
 - BlueDungeon asset
 - Scene3 scripting, enemy player target navmesh
+- Lebron for emotional support in the last scene (Necessary)
 
 
 <img width="803" height="454" alt="Screenshot 2026-04-02 at 2 34 01 PM" src="https://github.com/user-attachments/assets/a25b624f-9521-4afb-9f6a-242bd1b8957c" />
