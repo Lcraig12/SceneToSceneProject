@@ -1,4 +1,9 @@
-A short game about a wizard trying to get some gems. 3 Scenes with NPC's, collectible crystals, and enemies with patrolling and tracking AI.
+A short game about a wizard trying to get some gems. 3 Scenes with friendly NPC's, collectible floating crystals, and numerous enemies with patrolling and tracking AI.
+
+3 Scenes:
+- Scenic Meadow on a Bright Day
+- Creepy Blue Dungeon
+- Escape Back to Home
 
 To interact with objects in the game, hover with the mouse and press e! (Talk with NPC's, swap scenes)
 
