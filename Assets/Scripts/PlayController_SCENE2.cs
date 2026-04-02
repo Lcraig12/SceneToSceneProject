@@ -83,6 +83,7 @@ public class PlayController_SCENE2 : MonoBehaviour
                     lives = 3;
                     livesText.text = "Lives: " + lives.ToString();
                     gemCountText.text = "Gems Collected: " + gemCollectCount.ToString() +"/5";
+                    SceneManager.LoadScene("Dungeon");
                 }
                 else
                 {
